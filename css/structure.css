@@ -1,0 +1,59 @@
+
+.floatleft{
+	float:left;
+}
+
+.floatright{
+	float:right;
+}
+
+.site {
+	width:100%;
+	max-width:1024px;
+	margin:auto;
+}
+
+.row{
+	width:100%;
+	display:block;
+	float:left;
+	clear:both;
+	position:relative;
+}
+
+.row > div{
+	float:left;
+	}
+
+.clear{
+	clear:both;
+}
+
+.row .span12{
+	width:100%;
+}
+
+.row .span9{
+	width: 66.66%;
+}
+
+.row .span3{
+	width: 33.33%;
+}
+
+/*----------------------------------------------------------- Maximum width of 1024 pixels. */	
+
+@media screen and (max-width: 1024px) {
+	.site{
+		width:94%;
+		padding:0 3%;
+	}
+}
+	
+/*----------------------------------------------------------- Maximum width of 728 pixels. */
+@media screen and (max-width: 728px) {
+	.row .span9,
+	.row .span3{
+		width:100%;
+	}
+}
